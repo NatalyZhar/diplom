@@ -1,0 +1,47 @@
+h1 {
+    color: gray;
+    margin-top: 10px;
+}
+.text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    top: 20px;
+    width: 80%;
+    font-weight: 100;
+    border-left: 0.5px solid #1780C3;
+}
+.text p {
+    margin-left: 10px;
+}
+h3 {
+    margin-top: 30px;
+    color: #1780C3;
+}
+.mission {
+    display: block;
+    position: relative;
+    border-right: 0.5px solid #1780C3;
+    border-left: 0.5px solid #1780C3;
+    font-weight: 100;
+}
+.mission p {
+    margin: 10px;
+}
+hr {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #bebebe;
+}
+h5 {
+    color: #1780C3;
+}
+ul {
+    margin: 20px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+li {
+    margin-bottom: 5px;
+}

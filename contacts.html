@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles-con.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="" ></a>
+        <ul class="menu">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./about.html">О предприятии</a></li>
+            <li><a href="./projects.html">Проекты</a></li>
+            <li><a href="./vacancy.html">Вакансии</a></li>
+            <li><a href="./contacts.html">Конктакты</a></li>
+        </ul>
+    </div>
+    <div class="mainblock1">
+        <h1>Конктакты</h1>
+            <div class="adress">
+                <p class="paragraph">Адрес</p>
+                <p>123557, Москва, Пресненский Вал, 19, стр. 1</p>
+            </div>
+            <div class="contact-container">
+                <div class="container">
+                    <p class="paragraph">Телефон справочной</p>
+                    <p><a href="tel:+74997028121">+7 (499) 702-81-21</a></p>
+                </div>
+                <div class="container">
+                    <p class="paragraph">Факс</p>
+                    <p><a href="tel:+74997028245">+7 (499) 702-82-45</a></p>
+                </div>
+            </div>
+            <div class="container">
+                <p class="paragraph">E-mail справочной</p>
+                <p><a href="mailto:fganu.citis@mail.ru">fganu.citis@mail.ru</a></p>
+            </div>
+        <hr>
+        <h3 class="heading3">Есть вопросы? Тогда свяжитесь с нами</h3>
+        <form action="./formes.php" class="form1" method="post">
+            <input type="hidden" name="project_name" value="Site Name">
+		    <input type="hidden" name="admin_email" value="fganu.citis@mail.com">
+		    <input type="hidden" name="form_subject" value="Form Subject">
+            <input type="text" placeholder="Имя" class="input1" name="name" id="name" required>
+            <input type="email" placeholder="Электронная почта" class="input1" name="mail" id="mail" required>
+            <textarea name="message" id="message" class="text" placeholder="Текст сообщения" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-cont">
+        <div class="logo-footer">
+            <a href="./index.html"><img src="./img/logo.png" alt="" ></a>
+        </div>
+        <ul class="footer-menu">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./about.html">О предприятии</a></li>
+            <li><a href="./projects.html">Проекты</a></li>
+            <li><a href="./vacancy.html">Вакансии</a></li>
+        </ul>
+        <div class="cont-inf">
+            <p class="footer-heading">Конктактная информация</p>
+            <p>Телефон: <a href="tel:+74997028121">+7 (499) 702-81-21</a></p>
+            <p>Факс: <a href="tel:+74997028245">+7 (499) 702-82-45</a></p>
+            <p>E-mail: <a href="mailto:kants@citis.ru">kants@citis.ru</a></p>
+        </div>
+        </div>
+        <div class="under">
+            <hr class="footer-line">
+            <p>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ <br>
+                «Центр информационных технологий и систем органов исполнительной власти имени А.В. Старовойтова»
+            </p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
