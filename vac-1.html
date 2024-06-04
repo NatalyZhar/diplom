@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./css/styles-vac-one.css">
+    
+    <title>FRONTEND разработчик</title>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+        <ul class="menu">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./about.html">О предприятии</a></li>
+            <li><a href="./projects.html">Проекты</a></li>
+            <li><a href="./vacancy.html">Вакансии</a></li>
+            <li><a href="./contacts.html">Конктакты</a></li>
+        </ul>
+    </div>
+    <div class="mainblock2">
+        <h1>FRONTEND разработчик</h1>
+        <div class="cont-vac">
+            <div class="vac-form">
+                <h3>Откликнуться на вакансию</h3>
+                <form action="./send_mail.php" class="form-vac" id="form" method="post" enctype="multipart/form-data">
+                    <input type="text" placeholder="Имя" name="name" class="input-text" required>
+                    <input type="text" placeholder="Фамилия" name="surname" class="input-text" required>
+                    <input type="email" placeholder="Email" name="email" class="input-text" required>
+                    <input type="text" placeholder="Номер телефона" name="tel" id="tel" class="input-text" required>
+                    <div class="file-box">
+                        <div class="file__field">
+                          <input type="file" name="file" id="file" accept=".doc, .docx, .pdf" />
+                          <label class="file__btn" id="file_btn" for="file">Выберите файл</label>
+                          <div class="file__info">
+                            <div class="file__name" id="file_name"></div>
+                            <div class="file__btn-close" id="file_btn_close"></div>
+                          </div>
+                        </div>
+                        <div class="file__hint">
+                          <span>Максимум 20 Мб;</span>
+                          <span>В формате .docx, .pdf</span>
+                        </div>
+                      </div>
+                    <button type="submit" class="form-button">Отправить</button>
+                </form>
+            </div>
+            <div class="vac-desc">
+                <h4>Технологический стек:</h4>
+                <p>React, JavaScript, HTML5, CSS3</p>
+                <h3>Обязанности</h3>
+                <ul class="vac-ul">
+                    <li>рефакторинг и оптимизация текущего функционала</li>
+                    <li>сопровождение разработанных проектов</li>
+                    <li>верстка приложения с помощью HTML/CSS</li>
+                    <li>продумывание архитектуры приложения</li>
+                    <li> разработка логики компонента или приложения</li>
+                    <li>исследование и внедрение нового инструментария</li>
+                </ul>
+                <h3>Требования</h3>
+                <ul class="vac-ul">
+                    <li>знание React и опыт создания пользовательских интерфейсов с использованием React</li>
+                    <li>опыт работы с библиотекой компонентов Ant Design</li>
+                    <li>уверенное знание JavaScript, HTML и CSS (в том числе сетки и популярные CSS-фреймворки)</li>
+                    <li>знание препроцессоров CSS</li>
+                    <li>знание основ SQL и опыт работы с PostgreSQL</li>
+                    <li>обязательный опыт самостоятельной разработки</li>
+                </ul>
+                <h3>Условия</h3>
+                <ul class="vac-ul">
+                    <li>работа в профессиональной команде</li>
+                    <li>гибридный формат работы</li>
+                    <li>комфортабельный офис (м. Белорусская, м. Улица 1905 года)</li>
+                    <li>социальный пакет (ДМС, страхование от несчастных случаев, льготное кредитование)</li>
+                    <li>оформление по ТК РФ</li>
+                    <li>официальная заработная плата</li>
+                    <li>оплачиваемый отпуск и больничный лист</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="logo-footer">
+                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <ul class="footer-menu">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">О предприятии</a></li>
+                <li><a href="./projects.html">Проекты</a></li>
+                <li><a href="./vacancy.html">Вакансии</a></li>
+            </ul>
+            <div class="cont-inf">
+                <p class="footer-heading">Конктактная информация</p>
+                <p>Телефон: <a href="tel:+74997028121">+7 (499) 702-81-21</a></p>
+                <p>Факс: <a href="tel:+74997028245">+7 (499) 702-82-45</a></p>
+                <p>E-mail: <a href="mailto:kants@citis.ru">kants@citis.ru</a></p>
+            </div>
+        </div>
+        <div class="under">
+            <hr class="footer-line">
+            <p>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ <br>
+                «Центр информационных технологий и систем органов исполнительной власти имени А.В. Старовойтова»
+            </p>
+        </div>
+    </footer>
+
+    <script src="./js/file-submit.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fce9a50d02.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/file-submit.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        const element = document.getElementById('tel');
+        const maskOptions = {
+            mask: '+{7}(000)000-00-00'
+        };
+        const mask = IMask(element, maskOptions);
+    </script>
+
+</body>

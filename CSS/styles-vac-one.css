@@ -1,0 +1,186 @@
+.mainblock2 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+h1 {
+    margin: 50px 30px 0px 0px;
+    color: #4a4446;
+}
+.cont-vac {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 30px;
+}
+.vac-form {
+    display: block;
+    position: relative;
+    width: 30%;
+}
+.vac-form h3 {
+    margin-bottom: 20px;
+    color: #4a4446;
+}
+.form-vac {
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+}
+.input-text {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #1780C3;
+    margin-bottom: 20px;
+}
+.form-vac input:focus {
+    outline: none;
+}
+.form-vac input::placeholder {
+    font-size: 16px;
+}
+/* .file-item {
+    position: relative;
+}
+.file-button input[type=file]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+.file-button {
+    display: inline-flex;
+    background-color: #dadada;
+    border: 2px dashed #4a4446;
+    font-weight: 700;
+	color: #4a4446;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+} */
+.file-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* Стилизуем поле с кнопкой и названием файла */
+  .file__field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  /* Убираем дефолтный инпут */
+  #file {
+    display: none;
+  }
+  
+  /* Стилизуем кнопку загрузки файла */
+  .file__btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    background-color: #3e2093;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .file__btn:hover {
+    background-color: #4517c2;
+  }
+  
+  /* Стилизуем поле с названием файла и кнопкой закрыть */
+  .file__info {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 10px;
+  }
+  
+  .file__name {
+    margin-bottom: 4px;
+    color: #888;
+    font-size: 14px;
+    word-spacing: 1px;
+    user-select: none;
+  }
+  
+  .file__btn-close {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: red;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 3px;
+    font-weight: bold;
+  }
+  
+  /* Стилизуем поле с подсказками */
+  .file__hint {
+    color: #516d7b;
+    font-size: 14px;
+  }
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 60px;
+    background: #1780C3;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+.form-button:hover {
+    background: #136293;
+}
+.vac-desc {
+    width: 60%;
+    color: #4a4446; 
+}
+.vac-desc h4{
+    margin-bottom: 10px;
+}
+.vac-desc h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.vac-ul {
+    padding-left: 20px;
+    line-height: 1.5;
+}
+.vac-ul li {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}

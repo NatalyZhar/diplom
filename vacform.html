@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles-vac-form.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="vacancy.php" class="form-vac" method="post">
+        <input type="text" placeholder="Имя" name="name">
+        <input type="text" placeholder="Фамилия" name="surname">
+        <input type="email" placeholder="Email" name="email">
+        <input type="text" placeholder="Номер телефона" name="tel">
+        <select name="vacances" id="" class="select"> 
+            <option value="vac1">FRONTEND разработчик</option>
+            <option value="vac2">PYTHON разработчик</option>
+            <option value="vac3">PHP разработчик</option>
+            <option value="vac4">GO разработчик</option>
+            <option value="vac5">Разработчик БД</option>
+            <option value="vac6">DEVOPS инженер</option>
+            <option value="vac7">Бизнес-аналитик</option>
+            <option value="vac8">Специалист по информационной безопасности</option>
+        <input type="file" placeholder="Резюме" name="resume">
+        <a href="./vacancy.html"><button type="button">Вернуться назад</button></a>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
